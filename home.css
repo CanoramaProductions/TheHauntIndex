@@ -187,3 +187,71 @@ nav a:hover {
 .submit-button:hover {
     background-color: #333; /* Slightly lighter black on hover */
 }
+
+/* Honorable Mentions Section */
+#honorable-mentions {
+    text-align: center;
+    margin: 40px 0;
+    color: white; /* Match text color style */
+}
+
+#honorable-mentions h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.mentions-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Ensures responsive layout */
+}
+
+.mention-item {
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 15px;
+    width: 200px; /* Box size */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mention-item:hover {
+    transform: scale(1.05); /* Subtle zoom on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.mention-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.mention-item p {
+    font-size: 1.1rem;
+    margin: 10px 0;
+}
+
+.platform {
+    font-size: 0.9rem;
+    color: gray;
+    margin-bottom: 10px;
+}
+
+.visit-button {
+    display: inline-block;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.visit-button:hover {
+    background-color: #333; /* Slightly lighter black */
+}
