@@ -192,7 +192,8 @@ nav a:hover {
 #honorable-mentions {
     text-align: center;
     margin: 40px 0;
-    color: white; /* Match text color style */
+    color: rgb(0, 0, 0); /* Match text color style */
+    border: 2px solid white;
 }
 
 #honorable-mentions h2 {
@@ -208,8 +209,8 @@ nav a:hover {
 }
 
 .mention-item {
-    background-color: white;
-    color: black;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     text-align: center;
     padding: 15px;
     width: 200px; /* Box size */
@@ -243,8 +244,8 @@ nav a:hover {
 
 .visit-button {
     display: inline-block;
-    background-color: black;
-    color: white;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     text-decoration: none;
     padding: 8px 16px;
     border-radius: 4px;
