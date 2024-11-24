@@ -132,6 +132,10 @@ nav a:hover {
     color: red;
 }
 
+.label.credits {
+    color: rgb(114, 114, 114);
+}
+
 /* Grid styling for picks */
 .picks-grid {
     display: grid;
