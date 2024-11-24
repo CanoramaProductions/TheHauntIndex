@@ -1,0 +1,154 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+    background-color: black;
+    text-align: center;
+}
+
+/* Header */
+header {
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+p {
+    font-size: 1.2em;
+    margin: 0;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    border: 2px solid white;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Personal Picks Section */
+#personal-picks {
+    margin: 40px auto;
+}
+
+#personal-picks h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* General grid styling */
+.picks-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);  /* Seven columns per row */
+    gap: 20px;
+    padding: 0 20px;
+    justify-items: center;
+}
+
+/* Style for individual pick items */
+.pick-item {
+    text-align: center;
+}
+
+/* Placeholder image styling */
+.pick-item img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    border: 2px solid white;
+    transition: transform 0.3s ease;
+}
+
+/* Image hover effect */
+.pick-item img:hover {
+    transform: scale(1.1);
+}
+
+/* Image placeholder text styling */
+/* Styling for the anchor (link) tag to remove underline */
+.pick-item a {
+    text-decoration: none;
+    color: inherit; /* Keeps the text color the same as the surrounding text */
+}
+
+/* Add hover effects if desired (optional) */
+.pick-item a:hover {
+    text-decoration: none; /* Ensures underline doesn't reappear on hover */
+}
+
+/* Heading styling */
+#personal-picks h2 {
+    color: #fff;  /* Default heading color: white */
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+/* Label styling */
+.label {
+    display: block;        /* Ensures the label is on its own line above the image */
+    font-size: 0.8em;      /* Small text size */
+    margin-bottom: 5px;    /* Space between the label and the image */
+    text-align: center;    /* Center align the label */
+}
+
+/* Custom colors for labels */
+.label.mercari {
+    color: #7898f8;
+}
+
+.label.ebay {
+    color: #ffb100;
+}
+
+.label.etsy {
+    color: #f26422;
+}
+
+.label.amazon {
+    color: #42a2c8;
+}
+
+.label.spirit-halloween {
+    color: red;
+}
+
+/* Grid styling for picks */
+.picks-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); /* Seven columns per row */
+    gap: 20px;
+    justify-items: center;
+}
+
+/* Item details (rating and price) styling */
+.item-details {
+    font-size: 0.8em;  /* Small text size */
+    color: #aaa;       /* Neutral color for price text */
+    text-align: center;
+    margin-top: 5px;   /* Space between the title and details */
+}
+
+/* Highlight rating in gold */
+.item-details .rating {
+    color: gold;
+}

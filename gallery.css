@@ -1,0 +1,100 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+    background-color: black;
+    text-align: center;
+}
+
+/* Header */
+header {
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+p {
+    font-size: 1.2em;
+    margin: 0;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    border: 2px solid white;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Active Page Styling */
+nav a.active {
+    background-color: white;
+    color: black;
+    pointer-events: none;
+    cursor: default;
+}
+
+/* Content Section (Shared for Home and Gallery) */
+#personal-picks {
+    margin: 40px auto;
+}
+
+#personal-picks h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.picks-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 images per row */
+    gap: 20px;
+    justify-items: center;
+}
+
+.pick-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 300px; /* Adjust as needed */
+    height: auto;
+    overflow: hidden; /* Prevent any image overflow */
+}
+
+.pick-item img {
+    width: 100%;
+    height: auto;
+    max-width: none;
+    max-height: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease, width 0.3s ease, height 0.3s ease; /* Smooth transition on resize */
+}
+
+.pick-item img:hover {
+    transform: scale(1.05); /* Slightly zoom in when hovering */
+}
+
+.pick-item p {
+    margin-top: 10px;
+    font-size: 1em;
+}
