@@ -156,3 +156,34 @@ nav a:hover {
 .item-details .rating {
     color: gold;
 }
+/* Footer submission bar styling */
+.submission-bar {
+    background-color: white; /* White background */
+    color: black;            /* Black text color */
+    padding: 20px 0;         /* Padding for spacing */
+    text-align: center;      /* Center-align text and button */
+    position: relative;      /* Ensures it's at the bottom */
+    width: 100%;             /* Full width of the page */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow at top */
+}
+
+.submission-bar p {
+    font-size: 1.2rem; /* Slightly larger text */
+    margin: 0;         /* No margin for the text */
+}
+
+.submit-button {
+    display: inline-block;     /* Makes the button inline */
+    margin-top: 10px;          /* Spacing between text and button */
+    background-color: black;   /* Black button */
+    color: white;              /* White text on the button */
+    text-decoration: none;     /* Remove underline */
+    padding: 10px 20px;        /* Button size */
+    border-radius: 5px;        /* Rounded corners */
+    font-size: 1rem;           /* Button text size */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.submit-button:hover {
+    background-color: #333; /* Slightly lighter black on hover */
+}
